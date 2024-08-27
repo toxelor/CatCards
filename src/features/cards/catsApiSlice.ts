@@ -32,7 +32,7 @@ interface Breed {
 
 
 export const catsApiSlice = createApi({
-    baseQuery: fetchBaseQuery({ baseUrl: "https://api.thecatapi.com/v1/images/search?has_breeds=1&api_key=live_FV79aXndsL6R04E7XVq9jYnUKgUBolhLhXIvQcwuHrqabSAfbOEqYfZWyco7mfTr" }),
+    baseQuery: fetchBaseQuery({ baseUrl: `https://api.thecatapi.com/v1/images/search?has_breeds=1&api_key=${import.meta.env.VITE_REACT_APP_API_KEY}` }),
     reducerPath: "catsApi",
     // Tag types are used for caching and invalidation.
     tagTypes: ["Cats"],
