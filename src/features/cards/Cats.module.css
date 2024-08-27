@@ -23,6 +23,7 @@ button {
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
+    color:rgb(23, 18, 25);
     font-family: inherit;
     background-color: rgb(255, 245, 235);
     cursor: pointer;
